@@ -106,6 +106,18 @@ Performs similarly to commercial software, after both have run for about 5 minut
 
 ![Concave flag example](http://svgnest.com/github/concave.png)
 
+## Run with Docker
+
+A Dockerfile has been provided for those wanting to run locally/self-host with [Docker](https://www.docker.com/).
+Build/run commands provided below:
+
+```bash
+docker build -t svgnest .
+docker run -d --name svgnest -p 8080:80 svgnest
+```
+
+The instance is then available by navigating to http://localhost:8080.
+
 ## To-do
 
 - ~~Recursive placement (putting parts in holes of other parts)~~
